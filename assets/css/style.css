@@ -2250,7 +2250,7 @@ div#mCSB_1_container{
 
 .banner-carousel .content-box .btn-box{
   position: relative;
-  opacity: 0;
+  opacity: 1;
   -webkit-transform: translateY(100px);
   -moz-transform: translateY(100px);
   -ms-transform: translateY(100px);
@@ -4049,11 +4049,11 @@ h4 a{
   max-width: 100%;
   width: auto;
   margin: 0 auto;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(00%);
+  -o-filter: grayscale(00%);
+  -ms-filter: grayscale(00%);
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -ms-transition: all 500ms ease;
@@ -4067,6 +4067,98 @@ h4 a{
   -moz-filter: grayscale(0%);
   -o-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
+}
+
+.clients-section .owl-theme .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.clients-section .owl-theme .owl-nav .owl-prev{
+  position: absolute;
+  left: 0px;
+  top: 0;
+  background: rgba(1, 1, 1, 1);
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+  line-height: 56px;
+  font-size: 0px;
+  opacity: 1;
+  margin-top: -30px;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.clients-section .owl-theme .owl-nav .owl-prev:after {
+  font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  position: absolute;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  font-weight: 700;
+  left: 0;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.clients-section .owl-theme .owl-nav .owl-next {
+position: absolute;
+  right: 0px;
+  top: 0;
+  background: rgba(1, 1, 1, 1);
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  color: rgba(0, 0, 0, 0);
+  line-height: 56px;
+  font-size: 0px;
+  opacity: 1;
+  margin-top: -30px;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.clients-section .owl-theme .owl-nav .owl-next:after {
+   font-family: "Font Awesome 5 Free";
+  content: "\f105";
+  position: absolute;
+  top: 0;
+  width: 56px;
+  height: 56px;
+  line-height: 56px;
+  font-weight: 700;
+  right: 0;
+  color: #ffffff;
+  font-size: 24px;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.clients-section .owl-theme .owl-nav .owl-prev:hover,
+.clients-section .owl-theme .owl-nav .owl-next:hover{
+
 }
 
 
@@ -10805,9 +10897,8 @@ h4 a{
 
 .team-block-three .inner-box{
   position: relative;
+   display: block;
 
-  
-  
 }
 
 .team-block-three .inner-box .image-box{
@@ -10888,7 +10979,7 @@ h4 a{
 .team-block-three .inner-box .image-box .social-links li a{
   position: relative;
   display: inline-block;
-  font-size: 18px;
+  font-size: 30px;
   color: #fff;
 }
 
